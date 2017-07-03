@@ -4,7 +4,7 @@ var fs = require('fs');
 // const location  ='/repos/:owner/:repo/contributors?only=avatar_url';
 console.log('Welcome to the GitHub Avatar Downloader!');
 var GITHUB_USER = "VidushanK";
-var GITHUB_TOKEN = "861736a4838238cbbb97a15c69c07427a026022d";
+var GITHUB_TOKEN = process.env.GITHUB_ACCESS_TOKEN;
 // request.get('https://VidushanF:861736a4838238cbbb97a15c69c07427a026022d@api.github.com/repos/jquery/jquery/contributors');
 function getRepoContributors(repoOwner, repoName, cb) {
   var requestURL = 'https://'+ GITHUB_USER + ':' + GITHUB_TOKEN + '@api.github.com/repos/' + repoOwner + '/' + repoName + '/contributors';
@@ -33,7 +33,14 @@ getRepoContributors("jquery", "jquery", function(err, result) {
 // Implement downloadImageByURL
 
 
-function downloadImageByURL(url, filePath) {
-  // ...
-}
+// function downloadImageByURL(url, filePath) {
+//   cb(getRepoContributors());
+// request.get(requestOptions)
+//        .on('error', function (err) {
+//          throw err;
+//        })
+//        .on('response', function (response) {
+//          console.log('Response Status Code: ', response.statusCode);
+//        })
+//        .pipe(fs.createWriteStream('./downloaded.html')); }
 
