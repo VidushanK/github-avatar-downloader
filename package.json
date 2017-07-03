@@ -1,0 +1,19 @@
+{
+  "name": "vidushan",
+  "version": "1.0.0",
+  "description": "download github avatar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github-avatar-downloader"
+  },
+  "author": "Vidushan",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
