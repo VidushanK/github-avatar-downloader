@@ -30,3 +30,10 @@ getRepoContributors("jquery", "jquery", function(err, result) {
   console.log("Result:", result);
 });
 
+// Implement downloadImageByURL
+
+
+function downloadImageByURL(url, filePath) {
+  // ...
+}
+
